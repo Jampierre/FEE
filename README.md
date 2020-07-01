@@ -106,9 +106,9 @@ O projeto adotou a metodologia CRISP-DM, as etapas proposta na metodologia são 
 
 As setas apresentadas na figura indicam os caminhos mais comuns, contudo em teoria a qualquer momento do ciclo é possível voltar para quaisquer uma das etapas anteriores. Foi o que ocorreu neste projeto.
 
-1º Inicialmente o trabalho foi iniciado observando os conjuntos de dados disponíveis. Antes que fosse realizado um entendimento mais profundo dos dados propriamente dito, foi realizada uma busca por alguns termos médicos técnicos presente nas variáveis disponíveis ([ver aqui levantamento](https://www.google.com/url?q=https://docs.google.com/spreadsheets/d/1y4ACXRvBOYz6ujMD07nFcxU1CidBij2Lj65VGddk-DI/edit?usp%3Dsharing&sa=D&ust=1593606923979000&usg=AFQjCNFBdQCoFk-gS32QQFE1f58ueod71g)). Além disso foram elencadas uma série de perguntas que deveriam ser questionadas para o médico responsável. Foi realizada uma interação com o  médico para entendimento do cenário e contexto bem como termos técnicos.
+1º Inicialmente o trabalho foi iniciado observando os conjuntos de dados disponíveis. Antes que fosse realizado um entendimento mais profundo dos dados propriamente dito, foi realizada uma busca por alguns termos médicos técnicos presente nas variáveis disponíveis ([ver aqui levantamento](media/Definições.xlsx)). Além disso foram elencadas uma série de perguntas que deveriam ser questionadas para o médico responsável. Foi realizada uma interação com o  médico para entendimento do cenário e contexto bem como termos técnicos.
 
-Desta conversa foi derivado um questionário que ficaria de legado do projeto, com objetivo de facilitar a estruturação de informações nesta etapa de contextualização do problema ([ver aqui](https://www.google.com/url?q=https://docs.google.com/document/d/1BA2KeM2eLvlUOB0x747jSjdEJ8U5M_jymGap54umR-s/edit?usp%3Dsharing&sa=D&ust=1593606923989000&usg=AFQjCNHIXdTgDNTfb5C9eBfcaV1r6bLB0g)).
+Desta conversa foi derivado um questionário que ficaria de legado do projeto, com objetivo de facilitar a estruturação de informações nesta etapa de contextualização do problema ([ver aqui](media/ENTENDIMENTO%20DOS%20DADOS.docx)).
 
 Desta forma, primeiro foi iniciado um entendimento dos dados para guiar o posterior entendimento do negócio.
 
@@ -116,7 +116,7 @@ Desta forma, primeiro foi iniciado um entendimento dos dados para guiar o poster
 
 Desta forma observamos que durante o entendimento dos dados foi necessário dar um passo atrás e entender mais algumas circunstâncias não compreendidas na etapa anterior.
 
-Também foi estruturado um formulário básico que deve ser capaz de orientar informações, com objetivo de facilitar a estruturação de informações nesta etapa de entendimento dos dados.([ver aqui](https://www.google.com/url?q=https://docs.google.com/document/d/1BA2KeM2eLvlUOB0x747jSjdEJ8U5M_jymGap54umR-s/edit?usp%3Dsharing&sa=D&ust=1593606923989000&usg=AFQjCNHIXdTgDNTfb5C9eBfcaV1r6bLB0g))
+Também foi estruturado um formulário básico que deve ser capaz de orientar informações, com objetivo de facilitar a estruturação de informações nesta etapa de entendimento dos dados.([ver aqui](media/ENTENDIMENTO%20DOS%20DADOS.docx))
 
 3º Após os questionamentos, chegou-se a conclusão que a base de dados deveria ser reestruturada de forma que cada combinação de id de paciente + id de intervenção tivesse todas informações contidas em apenas uma única coluna. De forma geral, as variáveis contínuas foram agrupadas em função de algumas estatísticas de sumarização como: média, máx, min, contagem, usando sempre como chave de agregação o id de paciente + id de intervenção. E as variáveis categóricas foram realizo o one hot encoder, isto é, cada categoria de uma dada variável tornou-se uma nova coluna na base de dados, preenchida com “0” (ausencia) ou “1” (presença) e no finalmente foram somadas utilizado a chave composta de id de paciente + id de intervenção.
 
@@ -124,7 +124,7 @@ O principal ponto de atenção nesta etapa é a definição de quais operações
 
 Assim, observamos que nesta etapa é realizada a preparação dos dados, mas também novamente volta-se na etapa de entendimento do negócio para validação da reestruturação proposta.
 
-A descrição de todas as operações realizadas para reestruturação podem ser conferidas [aqui](https://www.google.com/url?q=https://docs.google.com/spreadsheets/d/1QbJ6BlBSz8fg0MsXi-8l8mPrXbIqCAK9WZdgsu-IN4E/edit?usp%3Dsharing&sa=D&ust=1593606923990000&usg=AFQjCNH-6QeGStSzhoWE-l_lEOiySa7ZDg) e o notebook gerador dos agrupamentos [aqui](https://www.google.com/url?q=https://drive.google.com/file/d/1c83I0JTJZKYZApnnH34gEOn3joNVpPzk/view?usp%3Dsharing&sa=D&ust=1593606923992000&usg=AFQjCNE9_trj_sxh5YksZ2z_kYtMTl8a3g).
+A descrição de todas as operações realizadas para reestruturação podem ser conferidas [aqui](media/Operações%20realizadas%20em%20casa%20base.xlsx) e o notebook gerador dos agrupamentos [aqui](notebooks/2_Data%20Preparation.ipynb).
 
 4º- Após a reestruturação e agrupamento da base iniciou-se a etapa de análise exploratórias. O primeiro tipo de análise realizada foi a comparação das distribuições de cada uma das features, com relação a variáveis resposta.
 
