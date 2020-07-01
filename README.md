@@ -68,6 +68,7 @@ The project aims to identify which information is most relevant to determine a c
 # Vídeo do Projeto
 [Vídeo](media/VideoFinalHD.mp4)
 
+[![Watch the video](media/capaProjeto.jpg)](media/VideoFinalHD.mp4)
 
 # Introdução e Motivação
 ~~~
