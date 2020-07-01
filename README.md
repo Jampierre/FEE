@@ -23,29 +23,31 @@ Na raiz deve haver um arquivo de nome `README.md` contendo a apresentação do p
 
 ## `data`
 
-Dados utilizados no projeto respeitadas as possíveis implicações éticas, se você tiver licença para tal e se o volume for suportado pelo Github. Você pode optar por colocar um subconjunto ilustrativo dos dados.
-
-É importante que sejam colocados os dados originais (se for possível) para garantir a reprodutibilidade do processo. Os originais são colocados na subpasta `raw` se forem produzidos pela equipe e na subpasta `external` se forem de terceiros. Também podem ser colocados aqui dados intermediários (por exemplo, dados tratados, resumidos etc.) na pasta `interim`. Finalmente, coloque os dados finais que serviram de entrada para as suas análises na subpasta `processed`.
-
 ## `notebooks`
 
-Código do seu projeto que pode ser executado online sem instalação de software, tal como um notebook em Jupyter ou equivalente.
+Reestruturação da base de dados: [.ipynb](notebooks/2_Data Preparation.ipynb)
+
+Análise exploratória distribuições e frequências: [colab](https://colab.research.google.com/drive/1L43e0xV_y1hXsxCw8xhJ_E4FFb_FrIzd?usp=sharing) <<< precisa de permissão
+
+Modelagem: [.ipynb](notebooks/All_Features_ALL_Y_INDIVIDUALLY-MergeV2.ipynb)
+
+AutoMlL:
 
 ## `src`
+Árvore de decisão: [.str](src/Decision-Tree-CHAID.str)
 
-Código em alguma linguagem ou projeto em Orange, Weka e similares.
+Análise de correspondência:
 
-Se for código em linguagem de programação, tente organizá-lo de forma que seja simples a sua execução por terceiros, por exemplo, acrescente as bibliotecas necessárias etc. Acrescente na raiz um arquivo `README.md` com as instruções básicas de instalação e execução.
 
 ## `assets`
 
-Árvore de decisão gerada:[.png](https://drive.google.com/file/d/1OwLjuVL-sbm5rk7ITq93RHi_W7IqCwMg/view?usp=sharing)
+Árvore de decisão gerada:[.png](media/Decision_tree.png)
 
-Levantamento do significado de alguns termos médicos encontrados na base de dados: [.xlsx](https://docs.google.com/spreadsheets/d/1y4ACXRvBOYz6ujMD07nFcxU1CidBij2Lj65VGddk-DI/edit?usp=sharing)
+Levantamento do significado de alguns termos médicos encontrados na base de dados: [.xlsx](media/Definições.xlsx)
 
-Questionário de entendimento do negócio: [.doc](https://docs.google.com/document/d/1eE0cbn0A_CAlzpDpMLngzpdHiGfZXSBPTUjwSxqsYPo/edit?usp=sharing)
+Questionário de entendimento do negócio: [.doc](media/Questionário%20-%20Entendimento%20do%20Negócio.docx)
 
-Questionário de entendimento dos dados: [.doc](https://docs.google.com/document/d/1BA2KeM2eLvlUOB0x747jSjdEJ8U5M_jymGap54umR-s/edit?usp=sharing)
+Questionário de entendimento dos dados: [.doc](media/ENTENDIMENTO%20DOS%20DADOS.docx)
 
 
 # Modelo para Apresentação do Projeto
