@@ -154,7 +154,7 @@ Desta forma, primeiro foi iniciado um entendimento dos dados para guiar o poster
 
 Desta forma observamos que durante o entendimento dos dados foi necessário dar um passo atrás e entender mais algumas circunstâncias não compreendidas na etapa anterior.
 
-Também foi estruturado um formulário básico que deve ser capaz de orientar informações, com objetivo de facilitar a estruturação de informações nesta etapa de entendimento dos dados.(ver aqui)POR O LINK.
+Também foi estruturado um formulário básico que deve ser capaz de orientar informações, com objetivo de facilitar a estruturação de informações nesta etapa de entendimento dos dados.([ver aqui](https://www.google.com/url?q=https://docs.google.com/document/d/1BA2KeM2eLvlUOB0x747jSjdEJ8U5M_jymGap54umR-s/edit?usp%3Dsharing&sa=D&ust=1593606923989000&usg=AFQjCNHIXdTgDNTfb5C9eBfcaV1r6bLB0g))
 
 3º Após os questionamentos, chegou-se a conclusão que a base de dados deveria ser reestruturada de forma que cada combinação de id de paciente + id de intervenção tivesse todas informações contidas em apenas uma única coluna. De forma geral, as variáveis contínuas foram agrupadas em função de algumas estatísticas de sumarização como: média, máx, min, contagem, usando sempre como chave de agregação o id de paciente + id de intervenção. E as variáveis categóricas foram realizo o one hot encoder, isto é, cada categoria de uma dada variável tornou-se uma nova coluna na base de dados, preenchida com “0” (ausencia) ou “1” (presença) e no finalmente foram somadas utilizado a chave composta de id de paciente + id de intervenção.
 
