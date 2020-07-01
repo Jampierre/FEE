@@ -89,7 +89,7 @@ The project aims to identify which information is most relevant to determine a c
 * `Tito Barbosa Rezende` - `025327`
 
 # Vídeo do Projeto
-[Vídeo](https://drive.google.com/file/d/1kkY0ogeB38BMyvEQ0bA2tkUDuS5mkzNX/view?usp=sharing)`https://drive.google.com/file/d/1kkY0ogeB38BMyvEQ0bA2tkUDuS5mkzNX/view?usp=sharing`
+[Vídeo](media/VideoFinalHD.mp4)`https://drive.google.com/file/d/1kkY0ogeB38BMyvEQ0bA2tkUDuS5mkzNX/view?usp=sharing`
 
 
 # Introdução e Motivação
@@ -140,7 +140,7 @@ O projeto adotou a metodologia CRISP-DM, as etapas proposta na metodologia são 
 5. Avaliação
 6. Implantação
 
-![](caminho até a imagem)
+![](media/CRISP-DM.jpg)
 
 As setas apresentadas na figura indicam os caminhos mais comuns, contudo em teoria a qualquer momento do ciclo é possível voltar para quaisquer uma das etapas anteriores. Foi o que ocorreu neste projeto.
 
