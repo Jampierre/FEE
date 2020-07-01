@@ -1,25 +1,15 @@
 # Estrutura de Arquivos e Pastas
-
-A estrutura aqui apresentada é uma simplificação daquela proposta pelo [Cookiecutter Data Science](https://drivendata.github.io/cookiecutter-data-science/). Também será aceito que o projeto adote a estrutura completa do Cookiecutter Data Science e isso será considerado um diferencial. A estrutura geral é a seguinte e será detalhada a seguir:
-
 ~~~
 ├── README.md          <- apresentação do projeto
 │
-├── data
-│   ├── external       <- dados de terceiros
-│   ├── interim        <- dados intermediários, e.g., resultado de transformação
-│   ├── processed      <- dados finais usados para a modelagem
-│   └── raw            <- dados originais sem modificações
+├── data               <- base de dados restrito
+│   └── NDA            <- Documento de confidencialidade dos dados
 │
-├── notebooks          <- Jupyter notebooks ou equivalentes
+├── notebooks          <- Jupyter notebooks
 │
-├── src                <- fonte em linguagem de programação ou sistema (e.g., Orange)
-│   └── README.md      <- instruções básicas de instalação/execução
-│
-└── assets             <- mídias usadas no projeto
+├── src                <- R e python
+└── media              <- mídias usadas no projeto
 ~~~
-
-Na raiz deve haver um arquivo de nome `README.md` contendo a apresentação do projeto, como detalhado na seção seguinte.
 
 ## `data`
 
@@ -76,7 +66,6 @@ The project aims to identify which information is most relevant to determine a c
 ~~~
 
 ## Perguntas de Pesquisa
-
 Quais informações referentes aos pacientes e seus respectivos procedimentos cirúrgicos cardíacos são mais relevantes para a classificação de sucesso ou fracasso pós-operatório?
 
 ## Objetivos do projeto
@@ -85,9 +74,7 @@ Quais informações referentes aos pacientes e seus respectivos procedimentos ci
 ~~~
 
 # Recursos e Métodos
-
 ## Bases de Dados
-`<Elencar bases de dados utilizadas no projeto preferencialmente no formato da tabela a seguir.>`
 Base de Dados | Detentor dos direitos de conteúdo da base | Resumo descritivo e uso
 ----- | ----- | -----
 Paciente | Médico Doutor Luiz Sérgio de Carvalho - FCM UNICAMP | `Base de informações cadastrais do paciente, como por exemplo: data de nascimento, idade, imc, pressão arterial normal e etc.`
@@ -99,8 +86,6 @@ Vaso | Médico Doutor Luiz Sérgio de Carvalho - FCM UNICAMP | `<>`
 Evolução | Médico Doutor Luiz Sérgio de Carvalho - FCM UNICAMP | `<>`
 
 ## Ferramentas
-
-`<Elencar ferramentas utilizadas no projeto preferencialmente no formato da tabela a seguir.>`
 Ferramenta | Endereço na Web | Resumo descritivo e uso
 ----- | ----- | -----
 Jupyter Notebook | https://jupyter.org/ | `Documento virtual que permite execução de rotinas usuais de programação e documentação de todo o processo de produção do código. No projeto foi utilizado para o código de reestruturação da base de dados e para os modelos.`
@@ -109,7 +94,6 @@ R Studio | https://rstudio.com/ | `Software livre de ambiente de desenvolvimento
 SPSS Modeler 18.1 | https://rstudio.com/ | `Ambiente de trabalho de mineração de dados versátil que ajuda a criar modelos preditivos precisos de maneira rápida e intuitiva, sem programação. No projeto foi Utilizado para criação do modelo de árvore de decisão por possuir uma interface mais interativa para a construção dos ramos.`
 
 # Metodologia e evolução do projeto
-
 O projeto adotou a metodologia CRISP-DM, as etapas proposta na metodologia são descritas a seguir:
 1. Entendimento do Negócio
 2. Entendimento dos Dados
