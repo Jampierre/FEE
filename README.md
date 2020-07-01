@@ -25,7 +25,7 @@ Na raiz deve haver um arquivo de nome `README.md` contendo a apresentação do p
 
 ## `notebooks`
 
-Reestruturação da base de dados: [.ipynb](notebooks/2_Data Preparation.ipynb)
+Reestruturação da base de dados: [.ipynb](notebooks/2_Data%20Preparation.ipynb)
 
 Análise exploratória distribuições e frequências: [colab](https://colab.research.google.com/drive/1L43e0xV_y1hXsxCw8xhJ_E4FFb_FrIzd?usp=sharing) <<< precisa de permissão
 
@@ -49,41 +49,16 @@ Questionário de entendimento do negócio: [.doc](media/Questionário%20-%20Ente
 
 Questionário de entendimento dos dados: [.doc](media/ENTENDIMENTO%20DOS%20DADOS.docx)
 
-
 # Modelo para Apresentação do Projeto
 
-Este é um guia de como produzir documentação em Markdown. Para entender como criar documentos em Markdown no Github, veja o material/vídeo:
-[Guia de Uso do Markdown](https://github.com/mc-unicamp/oficinas/tree/master/docs).
-
-Vide detalhes sobre o Markdown em: [Mastering Markdown](https://guides.github.com/features/mastering-markdown/).
-
-E mais especificamente sobre tabelas em: [Organizing information with tables](https://help.github.com/en/articles/organizing-information-with-tables)
-
-O projeto pode ser apresentado em uma das possíveis formas:
-1. texto completo no arquivo `README.md`;
-2. texto no arquivo `README.md` e seção de Resultados e Discussão dentro de um notebook Jupyter ou equivalente -- nesse caso, deve haver um link para se abrir o notebook na respectiva seção;
-3. texto completo dentro de um notebook Jupyter ou equivalente -- nesse caso, o arquivo README.md deve conter pelo menos: o título, os componentes da equipe e um link para o notebook.
-
-Só será aceito o uso de notebook Jupyter (ou equivalente) para apresentação do projeto ou parte dele (formas 2 e 3), se for possível executá-lo online a partir de um link sem instalação local de software.
-
-Para todos os casos, a estrutura Markdown proposta abaixo poderá ser usada, dado que os notebooks aceitam Markdown.
-
-Segue abaixo o modelo de como deve ser apresentado e documentado o projeto. Tudo o que for indicado entre `<...>` indica algo que deve ser substituído pelo indicado. No modelo são colocados exemplos ilustrativos, que serão substituídos pelos do seu projeto.
-
-# Modelo para Apresentação do Projeto
-
-# Projeto `<Título em Português>`
-# Project `<Title in English>`
+# Projeto `Determinação de informações relevantes para classificação de fracasso clínico após cirurgias cardíacas`
+# Project `Determination of information relevant to the classification of clinical failure after cardiac surgery`
 
 # Descrição Resumida do Projeto
-~~~
 O projeto tem como intuito identificar quais informações são mais relevantes para determinar um fracasso clínico após uma cirurgia cardíaca, além de realizar a própria predição de sucesso ou fracasso. No pré-operatório e durante o próprio procedimento são coletadas uma série de informações, desde dados cadastrais dos pacientes até os medicamentos utilizados no processo ou complicações durante a cirurgia. Com base nessas informações coletadas até o final do procedimento,este projeto se dedica a realizar análises que fornecerão não apenas a predição, mas sobretudo insights que guiem médicos em seu ofício.
-~~~
 
 # Abstract in English
-~~~
 The project aims to identify which information is most relevant to determine a clinical failure after cardiac surgery, in addition to making its own prediction of success or failure. In the preoperative period and during the procedure itself, some information is collected, from the patient's registration data to the medications used in the process or complications during the surgery. Based on this information collected until the end of the procedure, this project is dedicated to conducting analyzes that will provide not only forecasts, but, above all, insights that guide doctors in their day by day.
-~~~
 
 # Equipe
 * `Danielle Lanzarini Pinto` - `116559`
@@ -91,7 +66,7 @@ The project aims to identify which information is most relevant to determine a c
 * `Tito Barbosa Rezende` - `025327`
 
 # Vídeo do Projeto
-[Vídeo](media/VideoFinalHD.mp4)`https://drive.google.com/file/d/1kkY0ogeB38BMyvEQ0bA2tkUDuS5mkzNX/view?usp=sharing`
+[Vídeo](media/VideoFinalHD.mp4)
 
 
 # Introdução e Motivação
