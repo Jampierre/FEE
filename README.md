@@ -165,7 +165,7 @@ Podemos caracterizar esta etapa como a de Entendimento dos dados no CRISP-DM.
 
 5º Em seguida partiu-se para o treinamento dos primeiros modelos de classificação para sucesso ou fracasso clínico. A base de dados foi divida entre bases de treino e teste e os primeiros resultados da modelagem surgiram.
 
-Os notebooks com experimentos encontram-se >>>aqui<<< (modelos com experimentos nosso ) e [aqui](media/AutoML-H20.ipynb) (testando o AutoML da H2o).
+Os notebooks com experimentos encontram-se [aqui](notebooks/Modelagem.ipynb) e [aqui](media/AutoML-H20.ipynb) (testando o AutoML da H2o).
 
 Sendo assim ,este passo consistiu no primeiro momento em que entrou-se na etapa de modelagem pelas classificação do CRISP-DM.
 
