@@ -282,13 +282,13 @@ Com base nos resultados das análises exploratórias e dos modelos, entendemos q
 
 | Vaso                                  | Balão                              | Procedimento                          | Stent           | Paciente                            |
 |---------------------------------------|------------------------------------|---------------------------------------|-----------------|-------------------------------------|
-| Classificação Intervenção Acentuada   | Resultados Angiográfico Fracasso   | Uso de Clopidogrel.1gt.6h             | Timi-pós : 2,66 | Dislipidemia Sem Tratamento-IMC >50 |
-| Lesão Instrastent Intervenção Focal   | Vaso coronário Balão DPD           | Uso de Xelocaína.2                    |                 |                                     |
-| Lesão Instrastent Intervenção Oclusão | Vaso.coronário .Balão DG 1, 2 e 3  | Introdutor Intervenção 7F             |                 |                                     |
+| Classificação Intervenção Acentuada   | Resultados Angiográfico Fracasso   | Uso de Clopidogrel 1gt 6h             | Timi-pós maior que 2,66 | Dislipidemia Sem Tratamento |
+| Lesão Instrastent Intervenção Focal   | Vaso coronário Balão DPD           | Uso de Xelocaína                      |                 | IMC maior 50                        |
+| Lesão Instrastent Intervenção Oclusão | Vaso coronário Balão DG 1, 2 e 3   | Introdutor Intervenção 7F             |                 |                                     |
 | Placa Rota Intervenção                | Lesão ACC AHA                      | Ticlopidina                           |                 |                                     |
-|                                       | Balão_B1                           | Não foi realizado Trombolítico Prévio |                 |                                     |
-|                                       | Grau de esteose > 80               | Duração da intervenção > 90 minutos   |                 |                                     |
-|                                       | Pressão final ATM > 10             | Grau de complicação elevada           |                 |                                     |
+|                                       | Balão tipo B1                      | Não foi realizado Trombolítico Prévio |                 |                                     |
+|                                       | Grau de esteose maior 80           | Duração da intervenção maior 90 minutos|                 |                                     |
+|                                       | Pressão final ATM maior 10         | Grau de complicação elevada           |                 |                                     |
 
 # Conclusões
 Com a execução deste projeto conclui-se prontamente que uma das grandes dificuldades encontradas (e possivelmente extensível para outros problemas na área da saúde) diz respeito a fase de entendimento do contexto e a posterior utilização deste conhecimento transcritos em uma preparação de dados e engenharia de features adequadas.
