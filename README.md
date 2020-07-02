@@ -20,6 +20,8 @@
     ├── Decision_tree.png
     ├── Definições.xlsx
     ├── ENTENDIMENTO DOS DADOS.docx
+    ├── Modelo XGBOOST - implementação própria 3.PNG
+    ├── Modelo XGBOOST Auto ML - H20 3.PNG
     ├── Operações realizadas em casa base.xlsx
     ├── Questionário - Entendimento do Negócio.docx
     ├── VideoFinalHD.mp4
