@@ -66,17 +66,38 @@ The project aims to identify which information is most relevant to determine a c
 [![Watch the video](media/capaProjeto.jpg)](media/VideoFinalHD.mp4)
 
 # Introdução e Motivação
-~~~
-<Descrição do tema do projeto, incluindo motivação, contexto gerador e caracterização do problema. A introdução também pode apresentar iniciativas correlatas para lidar com o problema (não obrigatório) e deve introduzir de forma mais detalhada que o resumo a solução proposta e resultados alcançados. Aqui também são apresentadas as seções do projeto.>
-~~~
+Todos os dias são coletados dados de pacientes em clínicas e hospitais para fins legais e administrativos. No entanto, a cultura de dados não é enraizada na maioria destes locais, tornando estes dados quase sempre inutilizados para os fins médicos. Utilizando-se da ciência de dados é possível extrair conhecimento de dados e permitir que médicos e pacientes sejam beneficiados.
+
+A motivação deste trabalho é justamente utilizar esta oportunidade da disciplina para apresentar esta possibilidade de análise em uma situação real. 
+
+Desta forma deu-se início ao trabalho em conjunto ao doutor Luiz Sérgio de Carvalho da Faculdade de Ciências Médicas da Unicamp. Foram disponibilizados dados reais de pacientes  submetidos ao cateterismo, de forma que o objetivo deste projeto é identificar quais destas informações são mais relevantes para determinar um fracasso clínico após uma intervenção coronária percutânea.
+
+A solução adotada envolve análises exploratórias e modelagem, com algoritmos parametrizáveis e algoritmos “black box”.
+
+Como resultado deste projeto têm-se quatro legados: as análises exploratórias e seus respectivos insights, os modelos, determinação de flags de atenção para médicos durante o pré e período operatório e a criação de dois questionários guias para as etapas de entendimento do contexto e entendimento dos dados. Ambas as etapas devem ser realizadas com o máximo de rigor, uma vez vez que o contexto médico é regido por muitas particularidades. 
+
 
 ## Perguntas de Pesquisa
-Quais informações referentes aos pacientes e seus respectivos procedimentos cirúrgicos cardíacos são mais relevantes para a classificação de sucesso ou fracasso pós-operatório?
+Quais informações referentes aos pacientes e seus respectivos procedimentos cirúrgicos de cateterismo são mais relevantes para a classificação de sucesso ou fracasso pós-operatório?
 
 ## Objetivos do projeto
-~~~
-<Como seu projeto propôs abordar o problema apresentado.>
-~~~
+O projeto tem como objetivo abordar o problema apresentado utilizando-se da Metodologia CRISP-DM e adotando técnicas estatísticas e de machine Learning.  Para a análise exploratória estatística tem-se:
+* Estatísticas Descritivas
+* Testes de Hipótese
+* Tabelas de contingências e Análise de Correspondência
+
+No que abrangem técnicas de modelagem estatística e  machine learning, tem-se:
+* Árvore de decisão
+* Regressão Logística
+* Random Forest
+* Rede Neural
+* GBOOST
+* SVM
+* AUTOML
+
+Os modelo final será avaliado quanto às métricas de acurácia e f1-score.
+
+
 
 # Recursos e Métodos
 ## Bases de Dados
@@ -85,10 +106,10 @@ Base de Dados | Detentor dos direitos de conteúdo da base | Resumo descritivo e
 Paciente | Médico Doutor Luiz Sérgio de Carvalho - FCM UNICAMP | `Base de informações cadastrais do paciente, como por exemplo: data de nascimento, idade, imc, pressão arterial normal e etc.`
 Procedimento | Médico Doutor Luiz Sérgio de Carvalho - FCM UNICAMP | `Base de informações do procedimento cirúrgico realizado, como: duração da intervenção, via de acesso, anestesia dentre outros.`
 Complicação | Médico Doutor Luiz Sérgio de Carvalho - FCM UNICAMP | `Base de informações com complicações observadas durante procedimento cirúrgico realizado, como por exemplo:tipo de complicação, grau da complicação, conduta adotada etc.`
-Balão | Médico Doutor Luiz Sérgio de Carvalho - FCM UNICAMP | `Base de informações com complicações observadas a respeito dos balões utilizados pelos paciente. Balão e um dispositivo de assistência circulatória mecânica, que`
-Stent | Médico Doutor Luiz Sérgio de Carvalho - FCM UNICAMP | `<>`
-Vaso | Médico Doutor Luiz Sérgio de Carvalho - FCM UNICAMP | `<>`
-Evolução | Médico Doutor Luiz Sérgio de Carvalho - FCM UNICAMP | `<>`
+Balão | Médico Doutor Luiz Sérgio de Carvalho - FCM UNICAMP | `Base de informações com dados a respeito dos balões utilizados pelos paciente. Balão é um dispositivo de assistência circulatória mecânica, utilizado no cateterismo para dilatar as artérias e desobstruí-las, ou, criar condições para implantação de um stent.`
+Stent | Médico Doutor Luiz Sérgio de Carvalho - FCM UNICAMP | `Base de informações a respeito do Stent instalado no paciente. Stent é um dispositivo médico utilizado para manter a dilatação de artérias, garantindo o fluxo sanguíneo e evitando infarto.`
+Vaso | Médico Doutor Luiz Sérgio de Carvalho - FCM UNICAMP | `Base de informações do vaso tratado durante o procedimento de cateterismo.`
+Evolução | Médico Doutor Luiz Sérgio de Carvalho - FCM UNICAMP | `Base de informações com os desfechos das intervenções,como complicações, sucesso clínico, óbito entre outras.`
 
 ## Ferramentas
 Ferramenta | Endereço na Web | Resumo descritivo e uso
@@ -96,7 +117,7 @@ Ferramenta | Endereço na Web | Resumo descritivo e uso
 Jupyter Notebook | https://jupyter.org/ | `Documento virtual que permite execução de rotinas usuais de programação e documentação de todo o processo de produção do código. No projeto foi utilizado para o código de reestruturação da base de dados e para os modelos.`
 Google Colab | https://colab.research.google.com/ | `Similar ao jupyter notebook, o Colab é uma lista de células que podem conter textos explicativos ou códigos executáveis e suas respectivas saídas. Para o projeto foi utilizado para as análise descritivas e modelo de AutoML da H2O.`
 R Studio | https://rstudio.com/ | `Software livre de ambiente de desenvolvimento integrado para R, uma linguagem de programação para gráficos e cálculos estatísticos. Neste projeto, utilizado para a análise de correspondência.`
-SPSS Modeler 18.1 | https://rstudio.com/ | `Ambiente de trabalho de mineração de dados versátil que ajuda a criar modelos preditivos precisos de maneira rápida e intuitiva, sem programação. No projeto foi Utilizado para criação do modelo de árvore de decisão por possuir uma interface mais interativa para a construção dos ramos.`
+SPSS Modeler 18.1 | https://www.ibm.com/br-pt/products/spss-modeler | `Ambiente de trabalho de mineração de dados versátil que ajuda a criar modelos preditivos precisos de maneira rápida e intuitiva, sem programação. No projeto foi Utilizado para criação do modelo de árvore de decisão por possuir uma interface mais interativa para a construção dos ramos.`
 
 # Metodologia e evolução do projeto
 O projeto adotou a metodologia CRISP-DM, as etapas proposta na metodologia são descritas a seguir:
@@ -111,21 +132,22 @@ O projeto adotou a metodologia CRISP-DM, as etapas proposta na metodologia são 
 
 As setas apresentadas na figura indicam os caminhos mais comuns, contudo em teoria a qualquer momento do ciclo é possível voltar para quaisquer uma das etapas anteriores. Foi o que ocorreu neste projeto.
 
-1º Inicialmente o trabalho foi iniciado observando os conjuntos de dados disponíveis. Antes que fosse realizado um entendimento mais profundo dos dados propriamente dito, foi realizada uma busca por alguns termos médicos técnicos presente nas variáveis disponíveis ([ver aqui levantamento](media/Definições.xlsx)). Além disso foram elencadas uma série de perguntas que deveriam ser questionadas para o médico responsável. Foi realizada uma interação com o  médico para entendimento do cenário e contexto bem como termos técnicos.
+# Detalhamento do Projeto e evolução
+1º Inicialmente o trabalho foi iniciado observando os conjuntos de dados disponíveis. Antes que fosse realizado um entendimento mais profundo dos dados propriamente dito, foi realizada uma busca por alguns termos médicos técnicos presente nas variáveis disponíveis ([ver aqui levantamento](media/Definições.xlsx)). Além disso foram elencadas uma série de perguntas que deveriam ser questionadas para o médico responsável. Foi realizada uma interação com o  médico para entendimento do cenário e contexto, bem como, termos técnicos.
 
-Desta conversa foi derivado um questionário que ficaria de legado do projeto, com objetivo de facilitar a estruturação de informações nesta etapa de contextualização do problema ([ver aqui](media/ENTENDIMENTO%20DOS%20DADOS.docx)).
+Desta conversa foi derivado um questionário que fica como legado do projeto, com objetivo de facilitar o leitor na estruturação de informações em etapa de contextualização do problema ([ver aqui](media/ENTENDIMENTO%20DOS%20DADOS.docx)). As respostas do questionário para o problema aqui abordado são confidenciais e resguardadas eplo NDA assinado entre médico e integrantes do grupo.
 
-Desta forma, primeiro foi iniciado um entendimento dos dados para guiar o posterior entendimento do negócio.
+No que abrange a metodologia CRISP Desta forma, primeiro foi iniciado um entendimento dos dados, o qual guiou o posterior entendimento do negócio.
 
 2º Após a contextualização do cenário iniciou-se o entendimento dos dados. Sem grandes manipulações uma série de dúvidas apareceram como por exemplo: como é possível identificar unicamente um procedimento? Repetições de conteúdo quando se deveria ter uma chave única é uma erro no dado? O que é variável resposta e o que é variável explicativa? Como agrupar o dado de forma que cada intervenção cirúrgica esteja com todas informações em uma única linha? Qual a chave de cruzamento entre as diferentes variáveis? Existe algum significado nos valores nulos? Novamente, foi necessário voltar ao médico e realizar alguns questionamentos, bem como iniciar algumas análises iniciais.
 
 Desta forma observamos que durante o entendimento dos dados foi necessário dar um passo atrás e entender mais algumas circunstâncias não compreendidas na etapa anterior.
 
-Também foi estruturado um formulário básico que deve ser capaz de orientar informações, com objetivo de facilitar a estruturação de informações nesta etapa de entendimento dos dados.([ver aqui](media/ENTENDIMENTO%20DOS%20DADOS.docx))
+Também foi estruturado um formulário básico que deve ser capaz de orientar o leitor na estruturação de informações em  etapas de entendimento dos dados.([ver aqui](media/ENTENDIMENTO%20DOS%20DADOS.docx))
 
-3º Após os questionamentos, chegou-se a conclusão que a base de dados deveria ser reestruturada de forma que cada combinação de id de paciente + id de intervenção tivesse todas informações contidas em apenas uma única coluna. De forma geral, as variáveis contínuas foram agrupadas em função de algumas estatísticas de sumarização como: média, máx, min, contagem, usando sempre como chave de agregação o id de paciente + id de intervenção. E as variáveis categóricas foram realizo o one hot encoder, isto é, cada categoria de uma dada variável tornou-se uma nova coluna na base de dados, preenchida com “0” (ausencia) ou “1” (presença) e no finalmente foram somadas utilizado a chave composta de id de paciente + id de intervenção.
+3º Após os questionamentos, chegou-se a conclusão que a base de dados deveria ser reestruturada de forma que cada combinação de id de paciente + id de intervenção tivesse todas informações contidas em apenas uma única coluna. De forma geral, as variáveis contínuas foram agrupadas em função de algumas estatísticas de sumarização como: média, máx, min, contagem, usando sempre como chave de agregação o id de paciente + id de intervenção. E as variáveis categóricas foram realizadas o one hot encoder, isto é, cada categoria de uma dada variável tornou-se uma nova coluna na base de dados, preenchida com “0” (ausencia) ou “1” (presença) e no posteriormente foram somadas utilizado a chave composta de id de paciente + id de intervenção.
 
-O principal ponto de atenção nesta etapa é a definição de quais operações que serão utilizadas em cada agrupamento. Foi necessário olhar variável por variável, verificar seu domínio, variabilidade, valores nulos além de  validar se em contextos de negócio fazia sentido o proposto, sobretudo no que diz respeito às operações de variáveis numéricas. Por exemplo: não fazia num sentido calcular a média de uma pressão arterial, dado que a diferença entre a pressão baixa e alta é uma informação relevante, tendo portanto que fazer uma manipulação sob esse delta ou avaliando individualmente seu mínimo/máximo.
+O principal ponto de atenção nesta etapa é a definição de quais operações que serão utilizadas em cada agrupamento. Foi necessário olhar variável por variável, verificar seu domínio, variabilidade, valores nulos além de  validar se em contextos de negócio fazia sentido o proposto, sobretudo no que diz respeito às operações de variáveis numéricas. Por exemplo: não fazia sentido calcular a média de uma pressão arterial, dado que a diferença entre a pressão baixa e alta é uma informação relevante, sendo portanto necessário realizar uma manipulação sob esse delta de interesse e avaliando individualmente seu mínimo/máximo.
 
 Assim, observamos que nesta etapa é realizada a preparação dos dados, mas também novamente volta-se na etapa de entendimento do negócio para validação da reestruturação proposta.
 
@@ -133,41 +155,69 @@ A descrição de todas as operações realizadas para reestruturação podem ser
 
 4º- Após a reestruturação e agrupamento da base iniciou-se a etapa de análise exploratórias. O primeiro tipo de análise realizada foi a comparação das distribuições de cada uma das features, com relação a variáveis resposta.
 
-Este processo foi simples no que diz respeito ao código gerado, contudo sua análise minuciosa é muito extensa, dado que forma cerca de 700 variáveis para avaliar, assim no relatório de análise exploratório é ressaltado apenas os casos que mais saltaram aos olhos.
+Este processo foi simples no que diz respeito ao código gerado, contudo sua análise minuciosa é muito extensa, dado que após a reestruturação tem-se  cerca de 700 variáveis para avaliar, assim, no relatório de análise exploratório é ressaltado apenas os casos de mais destaque.
 
 Esta análise pode ser conferida [aqui](media/Análise%20Exploratória.ipynb).
 
 Os resultados obtidos aqui serviram para guiar uma segunda etapa de análise exploratória, mas não mudou grandemente a forma como foi realizada a etapa de modelagem que viria a seguir.
 
-Podemos caracterizar esta etapa como a de Entendimento dos dados no CRISP-DM
+Podemos caracterizar esta etapa como a de Entendimento dos dados no CRISP-DM.
 
 5º Em seguida partiu-se para o treinamento dos primeiros modelos de classificação para sucesso ou fracasso clínico. A base de dados foi divida entre bases de treino e teste e os primeiros resultados da modelagem surgiram.
 
 Os notebooks com experimentos encontram-se >>>aqui<<< (modelos com experimentos nosso ) e [aqui](media/AutoML-H20.ipynb) (testando o AutoML da H2o).
 
-Sendo assim ,este passp consistiu no primeiro momento em que entrou-se na etapa de modelagem pelas classificação do CRISP-DM.
+Sendo assim ,este passo consistiu no primeiro momento em que entrou-se na etapa de modelagem pelas classificação do CRISP-DM.
 
-6º Com base nos insights retirados na etapa de análise exploratória e nas variáveis com maior importância para os modelos treinados na etapa de modelagem, realizou-se uma segunda rodada de análises exploratórias, focando agora nas variáveis de maior interesse. Forma empresaga ténicas de sumarização gráfica como boxplots e análise de correspondência. O objetivo disto é conseguir chegar a uma conclusão mais palpável das variáveis que ajudam a discriminar a resposta.
+6º Com base nos insights retirados na etapa de análise exploratória e nas variáveis com maior importância para os modelos treinados na etapa de modelagem, realizou-se uma segunda rodada de análises exploratórias, focando agora nas variáveis de maior interesse. Foram empregada técnicas de sumarização gráfica como boxplots e análise de correspondência. O objetivo disto é conseguir chegar a uma conclusão mais palpável das variáveis que ajudam a discriminar a resposta.
 
-Estas análises podem ser verificadas >>>aqui <<SUBIR NO DRIVE.
+Estas análises podem ser verificadas>>>>> aqui <<<<e >>>>aqui. <<SUBIR NO DRIVE.
 
 Desta forma, mais uma vez retornamos a parte de entendimento dos dados no CRISP-DM, o que nos ajuda a confirmar o já dito anteriormente, do quanto é comum ir e voltar nas etapas ao longo do processo.
 
 7º Finalizando o projeto foram selecionados os modelos que obtiveram a melhor performance, um modelo “black box” que não nos fornece informações claros sobre as relações entre as features e variável resposta e um modelo interpretável que permite facilmente esta compreensão.
 
-O modelo final black box pode ser encontrado >>>aqui.<< XGBOOST do tito
+O modelo final black box implementado pode ser encontrado >>>aqui.<< XGBOOST do tito
+
+O modelo final black box AUTOML pode ser encontrado [aqui](media/AutoML-H20.ipynb).
 
 O modelo final interpretável pode ser encontrado [aqui](src/Decision-Tree-CHAID.str) (arquivo do SPSS).
 
-Chegamos então na etapa de avaliação do CRISP-DM.
+Finaliza-se então na etapa de avaliação do CRISP-DM.
 
-8º Por fim, criou-se uma visualização gráfica das relações observadas. O objetivo disto é guiar os médicos de forma que os ajudem a levantar “flags de atenção” de acordo com a ocorrência dos cenários apresentados.
+8º Por fim, elencou-se as relações observadas como forma de guiar os médicos a levantar “flags de atenção” de acordo com a ocorrência dos cenários apresentados.
 
-Além disso também pode ser disponibilizado os modelos criados para implantação em produção. Ainda que se espere que este modelo seja evoluído ao longo do tempo, já é possível trazer ganhos se utilizado até que se tenha uma versão mais robusta.
+Além disso, também pode ser disponibilizado os modelos criados para implantação em produção. Ainda que se espere que este modelo seja evoluído ao longo do tempo, já é possível trazer ganhos se utilizado até que se tenha uma versão mais robusta.
 
 Finaliza-se a metodologia adotada terminando na etapa de implantação do CRISP-DM com a apresentação dos resultados obtidos para o médico. Nesta conversa é possível levantar oportunidade de melhora que serão discutidas no item “Trabalhos futuros”. Desta forma poderíamos concluir que um novo ciclo do CRISP-DM seria iniciado para essa evolução.
 
 # Resultados e Discussão
+Para a predição de fracasso clínico foi utilizada uma combinação entre técnicas de análise exploratória e modelagem.
+
+## Análise de Correspondência
+Na etapa exploração dos dados, a técnica de análise de correspondência forneceu insights interessantes a respeito da relação entre o fracasso clínico e features categóricas, algo interessante já que a correlação não é uma métrica apropriada para este tipo de dados.
+
+![](media/mcaPlot.png)
+
+Os resultados desta análise, juntamente com a importância das features do modelos construídos ajudaram posteriormente a criação de uma mapa de pontos de atenção que será apresentado mais adiante nesta sessão.
+
+Detalhando a etapa de modelagem , pode-se destacar os seguintes experimentos: 
+* Modelo XGBOOST: modelo com implementação completa realizado pelo grupo e com treinamento utilizando a técnica de random oversampling (validação com base nos moldes originais).
+* ModeloXGBOOST AutoML H20: modelo com implementação utilizando suporte de automl da H20.
+* Modelo de Árvore de Decisão: modelo com implementação completa realizada pelo grupo e com treinamento utilizando a técnica de undersampling (validação com base nos moldes originais).
+
+Algumas métricas de qualidade, matriz de confusão e variáveis mais importantes de cada modelo podem ser conferidas a seguir:
+
+## Modelo XGBOOST - implementação própria
+
+![](media/Modelo%20XGBOOST%20-%20implementação%20própria%201.PNG)
+![](media/Modelo%20XGBOOST%20-%20implementação%20própria%202.PNG)
+![](media/Modelo%20XGBOOST%20-%20implementação%20própria%203.PNG)
+
+## Modelo XGBOOST Auto ML - H20
+
+Na imagem abaixo é possível visualizar um plot da análise realizada, embora seja difícil o entendimento com o gráfico estático e sem opção de de interação com zoom in e zoom out, a ideia mostrar um exemplo das saídas obtidas. O círculo em vermelho chama atenção para onde a variável que indica fracasso clínico está disposta no gráfico. Simplificando a teoria por trás do método poderíamos resumir dizendo que as categorias das features mais próximas do fracasso clínico estariam mais relacionadas ao fracasso e por sua vez ajudando-a a explicar. 
+
 |                   | SUCESSO CLÍNICO | FRACASSO CLÍNICO |
 |-------------------|-----------------|------------------|
 | XGBOOST           | 0.96            | 0.41             |
