@@ -107,7 +107,7 @@ No que abrangem técnicas de modelagem estatística e  machine learning, tem-se:
 * Regressão Logística
 * Random Forest
 * Rede Neural
-* GBOOST
+* XGBOOST
 * SVM
 * AUTOML
 
