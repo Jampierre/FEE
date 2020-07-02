@@ -12,21 +12,24 @@
 ~~~
 
 ## `data`
+A base de dados foi fornecida pelo médico Luiz Sérgio de Carvalho da Faculdade de Ciências Médicas da Unicamp, contendo dados de pacientes que passaram por procedimento de cateterismo. A base é composta por pacientes distribuídos em 7 estados no Brasil e inclui os seguintes conjuntos de dados: dados sobre o paciente, sobre o procedimento, balões utilizados , stents, vasos tratados, complicações durante o cateterismo e a evolução pós operatória. Dentre estes conjuntos de dados são disponibilizados informações como idade, peso, existência de hipertensão arterial, diabetes, entre outros, bem como dados do procedimento cirúrgico como: duração, convênio, quantidade de vasos tratados e medicamentos administrados.
+
+A base pertence à clínica que coletou os dados e portanto não é pública. Apenas os dados agregados e resultados serão exibidos.
 
 ## `notebooks`
 
 Reestruturação da base de dados: [.ipynb](notebooks/2_Data%20Preparation.ipynb)
 
-Análise exploratória distribuições e frequências: [colab](https://colab.research.google.com/drive/1L43e0xV_y1hXsxCw8xhJ_E4FFb_FrIzd?usp=sharing) <<< precisa de permissão
+Análise exploratória distribuições e frequências: [.ipynb](media/Análise%20Exploratória.ipynb)
 
 Modelagem: [.ipynb](notebooks/All_Features_ALL_Y_INDIVIDUALLY-MergeV2.ipynb)
 
-AutoMlL:
+AutoMlL: [.ipynb](media/AutoML-H20.ipynb)
 
 ## `src`
 Árvore de decisão: [.str](src/Decision-Tree-CHAID.str)
 
-Análise de correspondência:
+Análise de correspondência: >>>Código em R da Danielle<<<
 
 
 ## `assets`
@@ -35,9 +38,11 @@ Análise de correspondência:
 
 Levantamento do significado de alguns termos médicos encontrados na base de dados: [.xlsx](media/Definições.xlsx)
 
-Questionário de entendimento do negócio: [.doc](media/Questionário%20-%20Entendimento%20do%20Negócio.docx)
+Questionário de entendimento do negócio*: [.doc](media/Questionário%20-%20Entendimento%20do%20Negócio.docx) 
 
-Questionário de entendimento dos dados: [.doc](media/ENTENDIMENTO%20DOS%20DADOS.docx)
+Questionário de entendimento dos dados*: [.doc](media/ENTENDIMENTO%20DOS%20DADOS.docx)
+
+*Note: Estes documentos são apenas modelos devido a confidencialiade dos dados
 
 # Modelo para Apresentação do Projeto
 
@@ -45,10 +50,10 @@ Questionário de entendimento dos dados: [.doc](media/ENTENDIMENTO%20DOS%20DADOS
 # Project `Determination of relevant features for classification of success and failure of percutaneous coronary intervention`
 
 # Descrição Resumida do Projeto
-O projeto tem como intuito identificar quais informações são mais relevantes para determinar um fracasso clínico após uma cirurgia cardíaca, além de realizar a própria predição de sucesso ou fracasso. No pré-operatório e durante o próprio procedimento são coletadas uma série de informações, desde dados cadastrais dos pacientes até os medicamentos utilizados no processo ou complicações durante a cirurgia. Com base nessas informações coletadas até o final do procedimento,este projeto se dedica a realizar análises que fornecerão não apenas a predição, mas sobretudo insights que guiem médicos em seu ofício.
+O projeto tem como intuito identificar quais informações são mais relevantes para determinar um fracasso clínico após uma intervenção coronária percutânea (cateterismo), além de realizar a própria predição de sucesso ou fracasso. No pré-operatório e durante o próprio procedimento são coletadas uma série de informações, desde dados cadastrais dos pacientes até os medicamentos utilizados no processo ou mesmo complicações durante a cirurgia. Com base nessas informações coletadas até o final do procedimento este projeto se dedica a realizar análises que fornecerão não apenas a predição, mas sobretudo insights que guiem médicos em seu ofício.
 
 # Abstract in English
-The project aims to identify which information is most relevant to determine a clinical failure after cardiac surgery, in addition to making its own prediction of success or failure. In the preoperative period and during the procedure itself, some information is collected, from the patient's registration data to the medications used in the process or complications during the surgery. Based on this information collected until the end of the procedure, this project is dedicated to conducting analyzes that will provide not only forecasts, but, above all, insights that guide doctors in their day by day.
+The project aims to identify which information is most relevant to determine a clinical failure after percutaneous coronary intervention, in addition to making its own prediction of success or failure. In the preoperative period and during the procedure itself, some information is collected, from the patient's registration data to the medications used in the process or complications during the surgery. Based on this information collected until the end of the procedure, this project is dedicated to conducting analyzes that will provide not only forecasts, but, above all, insights that guide doctors in their day by day.
 
 # Equipe
 * `Danielle Lanzarini Pinto` - `116559`
