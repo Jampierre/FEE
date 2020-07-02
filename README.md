@@ -246,6 +246,17 @@ De forma geral, foi possível perceber que independente da técnica adotada para
 
 
 # Trabalhos Futuros
-~~~
-<Indique trabalhos futuros a partir do ponto alcançado.>
-~~~
+ENTENDIMENTO DO NEGÓCIO E DADOS
+* Validação  feature por feature com especialista para compreensão dos valores nulos e validar se não existe alguma variável de pós-cirurgico sendo incluída como feature (variável futura).
+* Verificar quais features tem conteúdo subjetivo e fazer o teste de tirá-las do modelo.
+
+PREPARAÇÃO DOS DADOS
+* Estratégias para lidar com dados faltantes.
+* Seleção de features
+* Encoders binário >  transformar em um único
+* Após one hot enconding agregar pelo máximo e não pela soma, dado que todos os modelos consideraram a existência ou não de algo e não quantas vezes ocorreu.
+* Recategorizar variáveis de medicamentos agrupando por princípio ativo ou objetivo, reduzindo a quantidade de features.
+
+MODELAGEM
+* Criar modelos individuais por tipo de fracasso e posteriormente fazer o ensemble 
+
