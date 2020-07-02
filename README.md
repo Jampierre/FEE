@@ -244,6 +244,20 @@ Algumas métricas de qualidade, matriz de confusão e variáveis mais importante
 
 ## Modelo Árvore de Decisão
 
+|       |                   |     PREVISTO    |                  |
+|-------|-------------------|:---------------:|:----------------:|
+|       |                   | SUCESSO CLÍNICO | FRACASSO CLÍNICO |
+| REAL  | SUCESSO  CLÍNICO  |       1801      |        37        |
+|       |      FRACASSO     |        38       |        37        |
+
+| PRECISÃO |  0,5  |
+|:--------:|:-----:|
+|  RECALL  | 0,493 |
+|:--------:|:-----:|
+| F1-SCORE | 0,497 |
+|:--------:|:-----:|
+| ACURÁCIA | 0,961 |
+
 ![](media/Modelo%20Árvore%20de%20Decisão%201.PNG)
 ![](media/Modelo%20Árvore%20de%20Decisão%202.PNG)
 
