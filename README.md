@@ -251,17 +251,9 @@ Algumas métricas de qualidade, matriz de confusão e variáveis mais importante
 |       |      FRACASSO     |        38       |        37        |
 
 | PRECISÃO |  0,5  |
-|:--------:|:-----:|
 |  RECALL  | 0,493 |
-|:--------:|:-----:|
 | F1-SCORE | 0,497 |
-|:--------:|:-----:|
 | ACURÁCIA | 0,961 |
-
-![](media/Modelo%20Árvore%20de%20Decisão%201.PNG)
-![](media/Modelo%20Árvore%20de%20Decisão%202.PNG)
-
-
 
 ## Comparação  Geral 
 
@@ -292,6 +284,8 @@ De forma geral, foi possível perceber que independente da técnica adotada para
 
 
 # Trabalhos Futuros
+São identificadas as seguintes oportunidades de melhoria para trabalhos futuros:
+
 ENTENDIMENTO DO NEGÓCIO E DADOS
 * Validação  feature por feature com especialista para compreensão dos valores nulos e validar se não existe alguma variável de pós-cirurgico sendo incluída como feature (variável futura).
 * Verificar quais features tem conteúdo subjetivo e fazer o teste de tirá-las do modelo.
