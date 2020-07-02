@@ -130,7 +130,7 @@ A descrição de todas as operações realizadas para reestruturação podem ser
 
 Este processo foi simples no que diz respeito ao código gerado, contudo sua análise minuciosa é muito extensa, dado que forma cerca de 700 variáveis para avaliar, assim no relatório de análise exploratório é ressaltado apenas os casos que mais saltaram aos olhos.
 
-Esta análise pode ser conferida [aqui](https://www.google.com/url?q=https://colab.research.google.com/drive/1L43e0xV_y1hXsxCw8xhJ_E4FFb_FrIzd?usp%3Dsharing&sa=D&ust=1593606923990000&usg=AFQjCNGlTEmBIYvo917CRsxU1uevROkesw).
+Esta análise pode ser conferida [aqui](media/Análise%20Exploratória.ipynb).
 
 Os resultados obtidos aqui serviram para guiar uma segunda etapa de análise exploratória, mas não mudou grandemente a forma como foi realizada a etapa de modelagem que viria a seguir.
 
@@ -138,21 +138,21 @@ Podemos caracterizar esta etapa como a de Entendimento dos dados no CRISP-DM
 
 5º Em seguida partiu-se para o treinamento dos primeiros modelos de classificação para sucesso ou fracasso clínico. A base de dados foi divida entre bases de treino e teste e os primeiros resultados da modelagem surgiram.
 
-Os notebooks com experimentos encontram-se aqui (modelos com experimentos nosso ) e [aqui](https://www.google.com/url?q=https://colab.research.google.com/drive/1wov1D5OeywhbQYaovS0KJOq2Sep110lI?usp%3Dsharing&sa=D&ust=1593606923993000&usg=AFQjCNFrz3CdYThDDkdfoEhgsq0ReSDwXA) (testando o AutoML da H2o).
+Os notebooks com experimentos encontram-se >>>aqui<<< (modelos com experimentos nosso ) e [aqui](media/AutoML-H20.ipynb) (testando o AutoML da H2o).
 
 Sendo assim ,este passp consistiu no primeiro momento em que entrou-se na etapa de modelagem pelas classificação do CRISP-DM.
 
 6º Com base nos insights retirados na etapa de análise exploratória e nas variáveis com maior importância para os modelos treinados na etapa de modelagem, realizou-se uma segunda rodada de análises exploratórias, focando agora nas variáveis de maior interesse. Forma empresaga ténicas de sumarização gráfica como boxplots e análise de correspondência. O objetivo disto é conseguir chegar a uma conclusão mais palpável das variáveis que ajudam a discriminar a resposta.
 
-Estas análises podem ser verificadas aqui <<SUBIR NO DRIVE.
+Estas análises podem ser verificadas >>>aqui <<SUBIR NO DRIVE.
 
 Desta forma, mais uma vez retornamos a parte de entendimento dos dados no CRISP-DM, o que nos ajuda a confirmar o já dito anteriormente, do quanto é comum ir e voltar nas etapas ao longo do processo.
 
 7º Finalizando o projeto foram selecionados os modelos que obtiveram a melhor performance, um modelo “black box” que não nos fornece informações claros sobre as relações entre as features e variável resposta e um modelo interpretável que permite facilmente esta compreensão.
 
-O modelo final black box pode ser encontrado aqui.
+O modelo final black box pode ser encontrado >>>aqui.<< XGBOOST do tito
 
-O modelo final interpretável pode ser encontrado [aqui](https://www.google.com/url?q=https://drive.google.com/file/d/1obtvgJ74w_VbOHkbIXrFlk77t1-Fo89M/view?usp%3Dsharing&sa=D&ust=1593606923994000&usg=AFQjCNG8yVmiMIJmDiqpP597pIhXyBuvYA) (arquivo do SPSS).
+O modelo final interpretável pode ser encontrado [aqui](src/Decision-Tree-CHAID.str) (arquivo do SPSS).
 
 Chegamos então na etapa de avaliação do CRISP-DM.
 
@@ -162,24 +162,14 @@ Além disso também pode ser disponibilizado os modelos criados para implantaç�
 
 Finaliza-se a metodologia adotada terminando na etapa de implantação do CRISP-DM com a apresentação dos resultados obtidos para o médico. Nesta conversa é possível levantar oportunidade de melhora que serão discutidas no item “Trabalhos futuros”. Desta forma poderíamos concluir que um novo ciclo do CRISP-DM seria iniciado para essa evolução.
 
-## Detalhamento do Projeto
-~~~
-O projeto adotou a metodologia CRISP-DM, as etapas proposta na metodologia são descritas a seguir:
-~~~
-
-~~~python
-df = pd.read_excel("/content/drive/My Drive/Colab Notebooks/dataset.xlsx");
-sns.set(color_codes=True);
-sns.distplot(df.Hemoglobin);
-plt.show();
-~~~
-
 # Resultados e Discussão
-~~~
-<Apresente os resultados da forma mais rica possível, com gráficos e tabelas. Mesmo que o seu código rode online em um notebook, copie para esta parte a figura estática. A referência a código e links para execução online pode ser feita aqui ou na seção de detalhamento do projeto (o que for mais pertinente).
+|                   | SUCESSO CLÍNICO | FRACASSO CLÍNICO |
+|-------------------|-----------------|------------------|
+| XGBOOST           | 0.96            | 0.41             |
+| AUTOML H2O        | 0.96            | 0.44             |
+| ÁRVORE DE DECISÃO | 0.96            | 0.49             |
 
-A discussão dos resultados também pode ser feita aqui na medida em que os resultados são apresentados ou em seção independente. Aspectos importantes a serem discutidos: É possível tirar conclusões dos resultados? Quais? Há indicações de direções para estudo? São necessários trabalhos mais profundos?>
-~~~
+![](media/Decision_tree.png)
 
 # Conclusões
 ~~~
