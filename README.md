@@ -1,14 +1,30 @@
 # Estrutura de Arquivos e Pastas
 ~~~
-├── README.md          <- apresentação do projeto
+├── README.md                                           <- apresentação do projeto
 │
-├── data               <- base de dados restrito
-│   └── NDA            <- Documento de confidencialidade dos dados
+├── data                                                <- base de dados restrito
+│   └── NDA                                             <- Documento de confidencialidade dos dados
 │
-├── notebooks          <- Jupyter notebooks
-│
-├── src                <- R e python
-└── media              <- mídias usadas no projeto
+├── notebooks                                           <- Jupyter notebooks
+│   ├── Data Preparation.ipynb
+|   └── Modelagem.ipynb
+|
+├── src                                                 <- R e python
+│   ├── Decision-Tree-CHAID.str
+|   └── codigo-analise-correspondencia.R
+|
+└── media                                               <- mídias usadas no projeto
+    ├── Análise Exploratória.ipynb
+    ├── AutoML-H20.ipynb
+    ├── CRISP-DM.jpg
+    ├── Decision_tree.png
+    ├── Definições.xlsx
+    ├── ENTENDIMENTO DOS DADOS.docx
+    ├── Operações realizadas em casa base.xlsx
+    ├── Questionário - Entendimento do Negócio.docx
+    ├── VideoFinalHD.mp4
+    ├── capaProjeto.jpg
+    └── mcaPlot.png
 ~~~
 
 ## `data`
