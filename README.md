@@ -29,7 +29,7 @@ AutoMlL: [.ipynb](media/AutoML-H20.ipynb)
 ## `src`
 Árvore de decisão: [.str](src/Decision-Tree-CHAID.str)
 
-Análise de correspondência: >>>Código em R da Danielle<<<
+Análise de correspondência: [.R](src/codigo-analise-correspondencia.R)
 
 
 ## `assets`
