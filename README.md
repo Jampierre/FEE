@@ -18,11 +18,11 @@ A base pertence à clínica que coletou os dados e portanto não é pública. Ap
 
 ## `notebooks`
 
-Reestruturação da base de dados: [.ipynb](notebooks/2_Data%20Preparation.ipynb)
+Reestruturação da base de dados: [.ipynb](notebooks/Data%20Preparation.ipynb)
 
 Análise exploratória distribuições e frequências: [.ipynb](media/Análise%20Exploratória.ipynb)
 
-Modelagem: [.ipynb](notebooks/All_Features_ALL_Y_INDIVIDUALLY-MergeV2.ipynb)
+Modelagem: [.ipynb](notebooks/Modelagem.ipynb)
 
 AutoMlL: [.ipynb](media/AutoML-H20.ipynb)
 
