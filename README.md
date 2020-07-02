@@ -171,7 +171,7 @@ Sendo assim ,este passo consistiu no primeiro momento em que entrou-se na etapa 
 
 6º Com base nos insights retirados na etapa de análise exploratória e nas variáveis com maior importância para os modelos treinados na etapa de modelagem, realizou-se uma segunda rodada de análises exploratórias, focando agora nas variáveis de maior interesse. Foram empregada técnicas de sumarização gráfica como boxplots e análise de correspondência. O objetivo disto é conseguir chegar a uma conclusão mais palpável das variáveis que ajudam a discriminar a resposta.
 
-Estas análises podem ser verificadas>>>>> aqui <<<<e >>>>aqui. <<SUBIR NO DRIVE.
+Estas análises podem ser verificadas [aqui](src/codigo-analise-correspondencia.R).
 
 Desta forma, mais uma vez retornamos a parte de entendimento dos dados no CRISP-DM, o que nos ajuda a confirmar o já dito anteriormente, do quanto é comum ir e voltar nas etapas ao longo do processo.
 
