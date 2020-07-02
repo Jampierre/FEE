@@ -41,8 +41,8 @@ Questionário de entendimento dos dados: [.doc](media/ENTENDIMENTO%20DOS%20DADOS
 
 # Modelo para Apresentação do Projeto
 
-# Projeto `Determinação de informações relevantes para classificação de fracasso clínico após cirurgias cardíacas`
-# Project `Determination of information relevant to the classification of clinical failure after cardiac surgery`
+# Projeto `Determinação de informações relevantes para classificação de fracasso clínico após cateterismo`
+# Project `Determination of relevant features for classification of success and failure of percutaneous coronary intervention`
 
 # Descrição Resumida do Projeto
 O projeto tem como intuito identificar quais informações são mais relevantes para determinar um fracasso clínico após uma cirurgia cardíaca, além de realizar a própria predição de sucesso ou fracasso. No pré-operatório e durante o próprio procedimento são coletadas uma série de informações, desde dados cadastrais dos pacientes até os medicamentos utilizados no processo ou complicações durante a cirurgia. Com base nessas informações coletadas até o final do procedimento,este projeto se dedica a realizar análises que fornecerão não apenas a predição, mas sobretudo insights que guiem médicos em seu ofício.
