@@ -212,14 +212,34 @@ Algumas métricas de qualidade, matriz de confusão e variáveis mais importante
 
 ## Modelo XGBOOST - implementação própria
 
-![](media/Modelo%20XGBOOST%20-%20implementação%20própria%201.PNG)
-![](media/Modelo%20XGBOOST%20-%20implementação%20própria%202.PNG)
+|       |                   |     PREVISTO    |                  |
+|-------|-------------------|:---------------:|:----------------:|
+|       |                   | SUCESSO CLÍNICO | FRACASSO CLÍNICO |
+| REAL  | SUCESSO  CLÍNICO  |       1813      |        49        |
+|       |      FRACASSO     |        25       |        26        |
+
+| PRECISÃO | 0,51 |
+|:--------:|:----:|
+|  RECALL  | 0,35 |
+| F1-SCORE | 0,41 |
+| ACURÁCIA | 0,96 |
+
 ![](media/Modelo%20XGBOOST%20-%20implementação%20própria%203.PNG)
 
 ## Modelo XGBOOST Auto ML - H20
 
-![](media/Modelo%20XGBOOST%20Auto%20ML%20-%20H20%201.PNG)
-![](media/Modelo%20XGBOOST%20Auto%20ML%20-%20H20%202.PNG)
+|       |                   |     PREVISTO    |                  |
+|-------|-------------------|:---------------:|:----------------:|
+|       |                   | SUCESSO CLÍNICO | FRACASSO CLÍNICO |
+| REAL  | SUCESSO  CLÍNICO  |       1787      |        51        |
+|       |      FRACASSO     |        28       |        47        |
+
+| PRECISÃO | 0,48 |
+|:--------:|:----:|
+|  RECALL  | 0,63 |
+| F1-SCORE | 0,54 |
+| ACURÁCIA | 0,96 |
+
 ![](media/Modelo%20XGBOOST%20Auto%20ML%20-%20H20%203.PNG)
 
 ## Modelo Árvore de Decisão
@@ -231,7 +251,7 @@ Algumas métricas de qualidade, matriz de confusão e variáveis mais importante
 
 ## Comparação  Geral 
 
-|                   | SUCESSO CLÍNICO | FRACASSO CLÍNICO |
+|                   |    Acurácia     |     F1-score     |
 |-------------------|-----------------|------------------|
 | XGBOOST           | 0.96            | 0.41             |
 | AUTOML H2O        | 0.96            | 0.44             |
