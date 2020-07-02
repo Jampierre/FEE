@@ -197,6 +197,8 @@ Para a predição de fracasso clínico foi utilizada uma combinação entre téc
 ## Análise de Correspondência
 Na etapa exploração dos dados, a técnica de análise de correspondência forneceu insights interessantes a respeito da relação entre o fracasso clínico e features categóricas, algo interessante já que a correlação não é uma métrica apropriada para este tipo de dados.
 
+Na imagem abaixo é possível visualizar um plot da análise realizada, embora seja difícil o entendimento com o gráfico estático e sem opção de de interação com zoom in e zoom out, a ideia mostrar um exemplo das saídas obtidas. O círculo em vermelho chama atenção para onde a variável que indica fracasso clínico está disposta no gráfico. Simplificando a teoria por trás do método poderíamos resumir dizendo que as categorias das features mais próximas do fracasso clínico estariam mais relacionadas ao fracasso e por sua vez ajudando-a a explicar.
+
 ![](media/mcaPlot.png)
 
 Os resultados desta análise, juntamente com a importância das features do modelos construídos ajudaram posteriormente a criação de uma mapa de pontos de atenção que será apresentado mais adiante nesta sessão.
