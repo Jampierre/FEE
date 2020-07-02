@@ -216,7 +216,18 @@ Algumas métricas de qualidade, matriz de confusão e variáveis mais importante
 
 ## Modelo XGBOOST Auto ML - H20
 
-Na imagem abaixo é possível visualizar um plot da análise realizada, embora seja difícil o entendimento com o gráfico estático e sem opção de de interação com zoom in e zoom out, a ideia mostrar um exemplo das saídas obtidas. O círculo em vermelho chama atenção para onde a variável que indica fracasso clínico está disposta no gráfico. Simplificando a teoria por trás do método poderíamos resumir dizendo que as categorias das features mais próximas do fracasso clínico estariam mais relacionadas ao fracasso e por sua vez ajudando-a a explicar. 
+![](media/Modelo%20XGBOOST%20Auto%20ML%20-%20H20%201.PNG)
+![](media/Modelo%20XGBOOST%20Auto%20ML%20-%20H20%202.PNG)
+![](media/Modelo%20XGBOOST%20Auto%20ML%20-%20H20%203.PNG)
+
+## Modelo Árvore de Decisão
+
+![](media/Modelo%20Árvore%20de%20Decisão%201.PNG)
+![](media/Modelo%20Árvore%20de%20Decisão%202.PNG)
+
+
+
+## Comparação  Geral 
 
 |                   | SUCESSO CLÍNICO | FRACASSO CLÍNICO |
 |-------------------|-----------------|------------------|
@@ -224,12 +235,15 @@ Na imagem abaixo é possível visualizar um plot da análise realizada, embora s
 | AUTOML H2O        | 0.96            | 0.44             |
 | ÁRVORE DE DECISÃO | 0.96            | 0.49             |
 
-![](media/Decision_tree.png)
+Com base nos resultados das análises exploratórias e dos modelos, entendemos que mais do que uma predição é essencial que se possa fornecer aos médicos informações que devem ser tratadas como pontos de atenção no processo pré-operatório e operatório. Desta forma, como um dos grandes resultados deste trabalho foi realizada uma estruturação ocorrências ou características que uma vez identificadas estariam ligadas a um aumento da probabilidade de aquele caso ter uma evolução qualificada como fracasso clínico. Esta estruturação pode ser conferida na tabela a seguir. Cada informação da base deve ser interpretada individualmente como um incremento na probabilidade de fracasso, contudo sem um valor determinado para este incremento.
 
 # Conclusões
-~~~
-<Apresente aqui as conclusões finais do trabalho e as lições aprendidas.>
-~~~
+Com a execução deste projeto conclui-se prontamente que uma das grandes dificuldades encontradas (e possivelmente extensível para outros problemas na área da saúde) diz respeito a fase de entendimento do contexto e a posterior utilização deste conhecimento transcritos em uma preparação de dados e engenharia de features adequadas.
+
+Podemos entender que este projeto foi a execução de um ciclo completo da metodologia CRISP-DM, e portanto, se tratando de um ciclo, em outras interações certamente serão captadas informações não percebidas nessa rodada. Outro ponto de atenção neste processo é a existência de inúmeras features com dados faltantes, muito comum em dados médicos. Esta característica limitou muito o desempenho de diversos modelos que não mostram lidar de forma apropriada com dados faltante. Desta forma, um grande aprendizado do processo é a necessidade de lidar com dados faltantes não apenas com técnicas estatísticas e de machine learning, mas sobretudo validando o entendimento do que cada dado faltante na base pode significar. A título de exemplo podemos citar casos em que informações são anotadas manualmente após o procedimento cirúrgico, mas em situações de emergência ou complicações no ato operatório a equipe responsável por essa anotação simplesmente não realiza a coleta de dados, isto é, este caso a existência de um dado faltante pode ser uma informação relevante para caracterização do sucesso ou fracasso clínico.
+
+De forma geral, foi possível perceber que independente da técnica adotada para extração de insights sobre quais as variáveis mais relevante para caracterização do problema, todas elas pareceram convergir, tornando possível a construção de uma mapa de pontos de atenção que podem ser mentalizados pela equipe médica, mesmo sem nenhum modelo de machine learning em produção. Por fim, no que abrange as técnicas de modelagem, é notado também que os modelos obtiveram métricas muito próximas, dando indícios que para este problema modelos paramétricos mais simples sejam suficientes e podem fornecer uma explicabilidade maior que a área da saúde exige.
+
 
 # Trabalhos Futuros
 ~~~
