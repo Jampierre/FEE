@@ -151,7 +151,7 @@ O principal ponto de atenção nesta etapa é a definição de quais operações
 
 Assim, observamos que nesta etapa é realizada a preparação dos dados, mas também novamente volta-se na etapa de entendimento do negócio para validação da reestruturação proposta.
 
-A descrição de todas as operações realizadas para reestruturação podem ser conferidas [aqui](media/Operações%20realizadas%20em%20casa%20base.xlsx) e o notebook gerador dos agrupamentos [aqui](notebooks/2_Data%20Preparation.ipynb).
+A descrição de todas as operações realizadas para reestruturação podem ser conferidas [aqui](media/Operações%20realizadas%20em%20casa%20base.xlsx) e o notebook gerador dos agrupamentos [aqui](notebooks/Data%20Preparation.ipynb).
 
 4º- Após a reestruturação e agrupamento da base iniciou-se a etapa de análise exploratórias. O primeiro tipo de análise realizada foi a comparação das distribuições de cada uma das features, com relação a variáveis resposta.
 
