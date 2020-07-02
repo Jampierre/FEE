@@ -239,6 +239,16 @@ Algumas métricas de qualidade, matriz de confusão e variáveis mais importante
 
 Com base nos resultados das análises exploratórias e dos modelos, entendemos que mais do que uma predição é essencial que se possa fornecer aos médicos informações que devem ser tratadas como pontos de atenção no processo pré-operatório e operatório. Desta forma, como um dos grandes resultados deste trabalho foi realizada uma estruturação ocorrências ou características que uma vez identificadas estariam ligadas a um aumento da probabilidade de aquele caso ter uma evolução qualificada como fracasso clínico. Esta estruturação pode ser conferida na tabela a seguir. Cada informação da base deve ser interpretada individualmente como um incremento na probabilidade de fracasso, contudo sem um valor determinado para este incremento.
 
+| Vaso                                  | Balão                              | Procedimento                          | Stent           | Paciente                            |
+|---------------------------------------|------------------------------------|---------------------------------------|-----------------|-------------------------------------|
+| Classificação Intervenção Acentuada   | Resultados Angiográfico Fracasso   | Uso de Clopidogrel.1gt.6h             | Timi-pós : 2,66 | Dislipidemia Sem Tratamento-IMC >50 |
+| Lesão Instrastent Intervenção Focal   | Vaso coronário Balão DPD           | Uso de Xelocaína.2                    |                 |                                     |
+| Lesão Instrastent Intervenção Oclusão | Vaso.coronário .Balão DG 1, 2 e 3  | Introdutor Intervenção 7F             |                 |                                     |
+| Placa Rota Intervenção                | Lesão ACC AHA                      | Ticlopidina                           |                 |                                     |
+|                                       | Balão_B1                           | Não foi realizado Trombolítico Prévio |                 |                                     |
+|                                       | Grau de esteose > 80               | Duração da intervenção > 90 minutos   |                 |                                     |
+|                                       | Pressão final ATM > 10             | Grau de complicação elevada           |                 |                                     |
+
 # Conclusões
 Com a execução deste projeto conclui-se prontamente que uma das grandes dificuldades encontradas (e possivelmente extensível para outros problemas na área da saúde) diz respeito a fase de entendimento do contexto e a posterior utilização deste conhecimento transcritos em uma preparação de dados e engenharia de features adequadas.
 
