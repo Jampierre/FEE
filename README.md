@@ -44,8 +44,6 @@ Questionário de entendimento dos dados*: [.doc](media/ENTENDIMENTO%20DOS%20DADO
 
 *Note: Estes documentos são apenas modelos devido a confidencialiade dos dados
 
-# Modelo para Apresentação do Projeto
-
 # Projeto `Determinação de informações relevantes para classificação de fracasso clínico após cateterismo`
 # Project `Determination of relevant features for classification of success and failure of percutaneous coronary intervention`
 
@@ -251,6 +249,7 @@ Algumas métricas de qualidade, matriz de confusão e variáveis mais importante
 |       |      FRACASSO     |        38       |        37        |
 
 | PRECISÃO |  0,5  |
+|:--------:|:-----:|
 |  RECALL  | 0,493 |
 | F1-SCORE | 0,497 |
 | ACURÁCIA | 0,961 |
