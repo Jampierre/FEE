@@ -177,7 +177,7 @@ Desta forma, mais uma vez retornamos a parte de entendimento dos dados no CRISP-
 
 7º Finalizando o projeto foram selecionados os modelos que obtiveram a melhor performance, um modelo “black box” que não nos fornece informações claros sobre as relações entre as features e variável resposta e um modelo interpretável que permite facilmente esta compreensão.
 
-O modelo final black box implementado pode ser encontrado >>>aqui.<< XGBOOST do tito
+O modelo final black box implementado pode ser encontrado [aqui](notebooks/Modelagem.ipynb).
 
 O modelo final black box AUTOML pode ser encontrado [aqui](media/AutoML-H20.ipynb).
 
