@@ -135,7 +135,7 @@ As setas apresentadas na figura indicam os caminhos mais comuns, contudo em teor
 # Detalhamento do Projeto e evolução
 1º Inicialmente o trabalho foi iniciado observando os conjuntos de dados disponíveis. Antes que fosse realizado um entendimento mais profundo dos dados propriamente dito, foi realizada uma busca por alguns termos médicos técnicos presente nas variáveis disponíveis ([ver aqui levantamento](media/Definições.xlsx)). Além disso foram elencadas uma série de perguntas que deveriam ser questionadas para o médico responsável. Foi realizada uma interação com o  médico para entendimento do cenário e contexto, bem como, termos técnicos.
 
-Desta conversa foi derivado um questionário que fica como legado do projeto, com objetivo de facilitar o leitor na estruturação de informações em etapa de contextualização do problema ([ver aqui](media/ENTENDIMENTO%20DOS%20DADOS.docx)). As respostas do questionário para o problema aqui abordado são confidenciais e resguardadas eplo NDA assinado entre médico e integrantes do grupo.
+Desta conversa foi derivado um questionário que fica como legado do projeto, com objetivo de facilitar o leitor na estruturação de informações em etapa de contextualização do problema ([ver aqui](media/Questionário%20-%20Entendimento%20do%20Negócio.docx)). As respostas do questionário para o problema aqui abordado são confidenciais e resguardadas eplo NDA assinado entre médico e integrantes do grupo.
 
 No que abrange a metodologia CRISP Desta forma, primeiro foi iniciado um entendimento dos dados, o qual guiou o posterior entendimento do negócio.
 
